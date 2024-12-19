@@ -7,15 +7,14 @@
     <link rel="stylesheet" href="FootballWorld.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="header-title">
-        <!-- header -->
-        <h1>FootballWorld</h1>
+        <h1 id="site-title">FootballWorld</h1>
       </div>
     </header>
     <main>
-      <nav>
-        <ul>
+      <nav class="navigation">
+        <ul class="nav-list">
           <li><a href="#about">Про футбол</a></li>
           <li><a href="#design">Види м'ячів</a></li>
           <li><a href="#ball-stats">Статистика м'ячів</a></li>
@@ -23,67 +22,62 @@
         </ul>
       </nav>
 
-      <section id="about">
+      <section id="about" class="about-section">
         <h2>Про футбол</h2>
         <p>
-          Футбол — найпопулярніший вид спорту у світі. Це гра, що об'єднує
-          мільйони людей по всьому світу, де використовуються м'ячі різних
-          моделей для досягнення успіху на полі.
+          Футбол — це спорт, що об'єднує мільйони людей по всьому світу. М'ячі є
+          невід'ємною частиною гри, забезпечуючи якість гри та комфорт для
+          гравців.
         </p>
-
         <h3>Класифікація м'ячів</h3>
-        <ul>
+        <ul class="classification-list">
           <li>Матчеві м'ячі</li>
           <li>Тренувальні м'ячі</li>
           <li>Розважальні м'ячі</li>
         </ul>
-        <h3>Роль м'ячів у футболі</h3>
+        <h3>Роль м'ячів у грі</h3>
         <p>
-          Футбольні м'ячі мають важливу роль у грі. Від їхнього розміру,
-          матеріалу та форми залежить якість гри, траєкторія польоту та
-          загальний комфорт гравців.
+          Розміри, матеріали та дизайн м'ячів впливають на якість гри, точність
+          ударів і траєкторію польоту.
         </p>
       </section>
 
-      <section id="design">
+      <section id="design" class="species-section">
         <h2>Види м'ячів</h2>
-        <div class="design-list">
-          <article>
+        <div class="species-list">
+          <article class="species-item">
             <h3>Adidas Telstar</h3>
             <p>
-              Цей м'яч став революційним у світі футболу завдяки своєму дизайну.
-              Його чорно-білі панелі були розроблені спеціально для покращення
-              видимості на телевізійних трансляціях.
+              Ікона футболу з чорно-білим дизайном, створена для чемпіонату
+              світу 1970 року.
             </p>
-            <a href="adidas-telstar.html">Детальніше</a>
+            <a href="adidas-telstar.html" class="details-link">Детальніше</a>
           </article>
-          <article>
+          <article class="species-item">
             <h3>Adidas Brazuca</h3>
             <p>
-              Створений для чемпіонату світу 2014 року, цей м'яч став символом
-              інновацій та бразильської культури. Його дизайн та структура
-              забезпечують стабільну траєкторію польоту.
+              Офіційний м'яч чемпіонату світу 2014 року, який став символом
+              інновацій.
             </p>
-            <a href="adidas-brazuca.html">Детальніше</a>
+            <a href="adidas-brazuca.html" class="details-link">Детальніше</a>
           </article>
-          <article>
+          <article class="species-item">
             <h3>Adidas Al Rihla</h3>
             <p>
-              Назва м'яча перекладається як 'Подорож'. Цей м'яч поєднує передові
-              технології та екологічні матеріали, що робить його унікальним для
-              сучасного футболу.
+              Еко-дружній м'яч, який використовувався під час чемпіонату світу
+              2022 року.
             </p>
-            <a href="adidas-al-rihla.html">Детальніше</a>
+            <a href="adidas-al-rihla.html" class="details-link">Детальніше</a>
           </article>
         </div>
       </section>
 
-      <section id="ball-stats">
-        <h2>Статистика видів футбольних м'ячів</h2>
-        <table>
+      <section id="ball-stats" class="stats-section">
+        <h2>Статистика м'ячів</h2>
+        <table class="stats-table">
           <thead>
             <tr>
-              <th>Назва м'яча</th>
+              <th>Назва</th>
               <th>Розмір (см)</th>
               <th>Матеріал</th>
               <th>Призначення</th>
@@ -112,11 +106,11 @@
         </table>
       </section>
 
-      <section id="gallery">
+      <section id="gallery" class="gallery-section">
         <h2>Галерея м'ячів</h2>
         <div class="filter">
           <label for="design-filter">Фільтрувати за видом:</label>
-          <select id="design-filter">
+          <select id="design-filter" class="design-filter">
             <option value="all">Всі</option>
             <option value="telstar">Adidas Telstar</option>
             <option value="brazuca">Adidas Brazuca</option>
@@ -125,7 +119,7 @@
         </div>
         <div class="gallery-grid">
           <figure class="telstar" data-design="telstar">
-            <img src="./img/telstar" alt="Adidas Telstar" />
+            <img src="/img/telstar" alt="Adidas Telstar" />
             <figcaption>Adidas Telstar</figcaption>
           </figure>
           <figure class="brazuca" data-design="brazuca">
@@ -139,9 +133,9 @@
         </div>
       </section>
 
-      <section id="contact">
+      <section id="contact" class="contact-section">
         <h2>Зворотній зв'язок</h2>
-        <form action="#" method="post">
+        <form action="#" method="post" class="contact-form">
           <label for="name">Ім'я:</label>
           <input type="text" id="name" name="name" required />
 
@@ -151,11 +145,11 @@
           <label for="message">Повідомлення:</label>
           <textarea id="message" name="message" rows="4" required></textarea>
 
-          <button type="submit">Відправити</button>
+          <button type="submit" class="submit-button">Відправити</button>
         </form>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <p>
         &copy; 2024 <a href="desc.html">FootballWorld</a>. Всі права захищені.
       </p>
