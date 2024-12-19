@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FootballWorld</title>
+    <link rel="stylesheet" href="FootballWorld.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-title">
+        <!-- header -->
+        <h1>FootballWorld</h1>
+      </div>
+    </header>
+    <main>
+      <nav>
+        <ul>
+          <li><a href="#about">Про футбол</a></li>
+          <li><a href="#design">Види м'ячів</a></li>
+          <li><a href="#ball-stats">Статистика м'ячів</a></li>
+          <li><a href="#gallery">Галерея</a></li>
+        </ul>
+      </nav>
+
+      <section id="about">
+        <h2>Про футбол</h2>
+        <p>
+          Футбол — найпопулярніший вид спорту у світі. Це гра, що об'єднує
+          мільйони людей по всьому світу, де використовуються м'ячі різних
+          моделей для досягнення успіху на полі.
+        </p>
+
+        <h3>Класифікація м'ячів</h3>
+        <ul>
+          <li>Матчеві м'ячі</li>
+          <li>Тренувальні м'ячі</li>
+          <li>Розважальні м'ячі</li>
+        </ul>
+        <h3>Роль м'ячів у футболі</h3>
+        <p>
+          Футбольні м'ячі мають важливу роль у грі. Від їхнього розміру,
+          матеріалу та форми залежить якість гри, траєкторія польоту та
+          загальний комфорт гравців.
+        </p>
+      </section>
+
+      <section id="design">
+        <h2>Види м'ячів</h2>
+        <div class="design-list">
+          <article>
+            <h3>Adidas Telstar</h3>
+            <p>
+              Цей м'яч став революційним у світі футболу завдяки своєму дизайну.
+              Його чорно-білі панелі були розроблені спеціально для покращення
+              видимості на телевізійних трансляціях.
+            </p>
+            <a href="adidas-telstar.html">Детальніше</a>
+          </article>
+          <article>
+            <h3>Adidas Brazuca</h3>
+            <p>
+              Створений для чемпіонату світу 2014 року, цей м'яч став символом
+              інновацій та бразильської культури. Його дизайн та структура
+              забезпечують стабільну траєкторію польоту.
+            </p>
+            <a href="adidas-brazuca.html">Детальніше</a>
+          </article>
+          <article>
+            <h3>Adidas Al Rihla</h3>
+            <p>
+              Назва м'яча перекладається як 'Подорож'. Цей м'яч поєднує передові
+              технології та екологічні матеріали, що робить його унікальним для
+              сучасного футболу.
+            </p>
+            <a href="adidas-al-rihla.html">Детальніше</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="ball-stats">
+        <h2>Статистика видів футбольних м'ячів</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Назва м'яча</th>
+              <th>Розмір (см)</th>
+              <th>Матеріал</th>
+              <th>Призначення</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Adidas Telstar</td>
+              <td>68-70</td>
+              <td>Поліуретан</td>
+              <td>Офіційні матчі</td>
+            </tr>
+            <tr>
+              <td>Adidas Brazuca</td>
+              <td>68-70</td>
+              <td>Синтетичний матеріал</td>
+              <td>Чемпіонати світу</td>
+            </tr>
+            <tr>
+              <td>Adidas Al Rihla</td>
+              <td>68-70</td>
+              <td>Еко-матеріали</td>
+              <td>Сучасні турніри</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="gallery">
+        <h2>Галерея м'ячів</h2>
+        <div class="filter">
+          <label for="design-filter">Фільтрувати за видом:</label>
+          <select id="design-filter">
+            <option value="all">Всі</option>
+            <option value="telstar">Adidas Telstar</option>
+            <option value="brazuca">Adidas Brazuca</option>
+            <option value="alrihla">Adidas Al Rihla</option>
+          </select>
+        </div>
+        <div class="gallery-grid">
+          <figure class="telstar" data-design="telstar">
+            <img src="./img/telstar" alt="Adidas Telstar" />
+            <figcaption>Adidas Telstar</figcaption>
+          </figure>
+          <figure class="brazuca" data-design="brazuca">
+            <img src="./img/brazuca.avif" alt="Adidas Brazuca" />
+            <figcaption>Adidas Brazuca</figcaption>
+          </figure>
+          <figure class="alrihla" data-design="alrihla">
+            <img src="./img/alrihla.jpg" alt="Adidas Al Rihla" />
+            <figcaption>Adidas Al Rihla</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Зворотній зв'язок</h2>
+        <form action="#" method="post">
+          <label for="name">Ім'я:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Електронна пошта:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Повідомлення:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Відправити</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; 2024 <a href="desc.html">FootballWorld</a>. Всі права захищені.
+      </p>
+    </footer>
+  </body>
+</html>
